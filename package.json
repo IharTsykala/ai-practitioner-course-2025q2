@@ -7,7 +7,11 @@
   "scripts": {
     "load": "node scripts/loadDocuments.js",
     "embed": "node scripts/embedDocuments.js",
-    "test:ask": "node testAsk.js"
+    "test:ask": "node testAsk.js",
+    "start": "node server/app.js"
+  },
+  "bin": {
+    "rag-cli": "./cli.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +33,9 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "faiss-node": "^0.5.1",
-    "openai": "^4.104.0"
+    "langchain": "^0.3.29",
+    "openai": "^4.104.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }
